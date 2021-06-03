@@ -36,14 +36,16 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 70%;
+  width: 18rem;
   margin: 2rem auto;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--clr-neutral-white);
-  border-radius: 0.4rem;
+  border-radius: 0.6rem;
   overflow: hidden;
 }
-
+.car {
+  padding: 2rem 2rem;
+}
 .cars__sedan {
   background: var(--clr-primary-orange);
 }
@@ -55,39 +57,32 @@ html {
 .cars__luxury {
   background: var(--clr-primary-dark-cyan);
 }
-.car {
-  height: 25rem;
-}
 
 .icon {
   display: block;
-  margin: 2rem 2rem 0 2rem;
-  height: 1.6rem;
-  width: 2.7rem;
+  height: 2.5rem;
+  width: 4rem;
 }
 
 .title {
   font-family: var(--fnt-secondary);
   text-transform: uppercase;
-  margin: 2rem 2rem 0 2rem;
   font-size: 2rem;
+  margin: 2rem 0;
 }
 
 .details {
   font-weight: var(--fnt-size-normal);
-  margin: 2rem 2rem 0 2rem;
+  margin: 2rem 0;
   line-height: 1.8;
-  margin-top: 2rem;
 }
 
 .btn {
   text-decoration: none;
   display: inline-block;
-  margin-top: 4rem;
   background: white;
   padding: 0.8rem 1.6rem;
   border-radius: 100vw;
-  margin: 2rem 2rem 0 2rem;
   border: 2px solid white;
 }
 
@@ -118,45 +113,31 @@ html {
 /* //MID_SCREEN DESIGN// */
 /* ********************** */
 
-@media screen and (min-width: 540px) {
-  .car {
-    height: 25rem;
-  }
-
-  .attribution {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   .cars {
     flex-direction: row;
-    width: 80%;
-    margin-top: 8rem;
-  }
-  .details {
-    min-height: 4rem;
-    margin: 1.5rem 2rem 0 2rem;
-  }
-}
-
-@media screen and (min-width: 1220px) {
-  .cars {
-    flex-direction: row;
-    width: 60%;
-    margin-top: 8rem;
+    width: 48rem;
+    min-height: 30rem;
+    margin: 3rem auto;
+    justify-content: center;
   }
   .car {
-    height: 25rem;
+    padding: 2rem 1.8rem;
+  }
+
+  .title {
+    margin: 3rem 0;
   }
   .details {
-    min-height: 4rem;
-    margin: 1.5rem 4rem 0 2rem;
+    margin: 0;
+    margin-bottom: 3rem;
     line-height: 1.8;
   }
 
   .btn {
-    margin-top: 3rem;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0.9rem 1.9rem;
   }
 
   .btn__sedan:hover {
@@ -173,5 +154,18 @@ html {
     background: var(--clr-primary-dark-cyan);
     color: white;
     transition: 0.2s;
+  }
+  .attribution {
+    font-size: 1.2rem;
+  }
+}
+
+/* ************************* */
+/* // LARGE_SCREEN_DESIGN // */
+/* ************************* */
+
+@media screen and (min-width: 1200px) {
+  .cars {
+    width: 63rem;
   }
 }
