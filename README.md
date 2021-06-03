@@ -10,4 +10,4 @@ Your challenge is to build out this 3-column preview card component and get it l
 
 Check the preview in the below link:
 
-https://subhamverma2407.github.io/Codementor-Challenge-2/
+https://subhamverma2407.github.io/Frontend-mentor-challenge2
