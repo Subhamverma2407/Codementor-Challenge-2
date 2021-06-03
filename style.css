@@ -128,16 +128,31 @@ html {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .cars {
     flex-direction: row;
-    margin-top: 5rem;
+    width: 80%;
+    margin-top: 8rem;
+  }
+  .details {
+    min-height: 4rem;
+    margin: 1.5rem 2rem 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .cars {
+    flex-direction: row;
+    width: 60%;
+    margin-top: 8rem;
   }
   .car {
     height: 25rem;
   }
   .details {
-    margin: 2rem 2rem 0 2rem;
+    min-height: 4rem;
+    margin: 1.5rem 4rem 0 2rem;
+    line-height: 1.8;
   }
 
   .btn {
